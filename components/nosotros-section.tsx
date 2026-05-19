@@ -306,6 +306,33 @@ export default function NosotrosSection() {
           </div>
         </motion.div>
 
+        {/* Organigrama */}
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.28 }}
+          className="mb-20"
+        >
+          <div className="flex items-center gap-3 mb-10 justify-center">
+            <div className="w-12 h-12 rounded-xl bg-[#C13344]/15 border border-[#C13344]/30 flex items-center justify-center">
+              <span className="text-[#C13344] font-bold text-sm">04</span>
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground uppercase tracking-widest">04</p>
+              <h3 className="text-2xl font-bold text-foreground">Equipo Directivo</h3>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-border overflow-hidden bg-card p-4 md:p-8">
+            <img
+              src="/direcion.jpeg"
+              alt="Organigrama InnovaLayout S.A.S. — Estructura directiva"
+              className="w-full h-auto object-contain rounded-xl"
+              style={{ maxHeight: "680px" }}
+            />
+          </div>
+        </motion.div>
+
         {/* Values */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}

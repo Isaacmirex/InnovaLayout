@@ -25,31 +25,29 @@ export default function HeroSection() {
     <section
       id="inicio"
       ref={containerRef}
-      className="relative min-h-screen flex items-end overflow-hidden dark:bg-[#0B0F1E] bg-slate-100"
+      style={{
+        backgroundImage: "url('/imagen2.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="relative min-h-screen flex items-end overflow-hidden"
     >
-      {/* Full-bleed background */}
-      <div className="absolute inset-0 -z-30">
-        <img
-          src="/imagen2.webp"
-          alt=""
-          className="w-full h-full object-cover object-center"
-          aria-hidden="true"
-        />
-      </div>
+      {/* Dark mode overlay — covers the image with navy */}
+      <div className="absolute inset-0 pointer-events-none hidden dark:block
+        bg-gradient-to-t from-[#0B0F1E] via-[#0B0F1E]/80 to-[#0B0F1E]/55" />
+      <div className="absolute inset-0 pointer-events-none hidden dark:block
+        bg-gradient-to-r from-[#0B0F1E]/90 via-[#0B0F1E]/25 to-transparent" />
+
+      {/* Light mode overlay — very light tint so the image is clearly visible */}
+      <div className="absolute inset-0 pointer-events-none dark:hidden
+        bg-gradient-to-t from-white/60 via-white/20 to-transparent" />
+      <div className="absolute inset-0 pointer-events-none dark:hidden
+        bg-gradient-to-r from-white/50 via-transparent to-transparent" />
 
       {/* 3D particles — dark mode only */}
-      <div className="hidden dark:block">
+      <div className="hidden dark:block absolute inset-0 pointer-events-none">
         <HeroScene />
       </div>
-
-      {/* Overlay — dark mode: deep navy, light mode: light tint so image shows */}
-      <div className="absolute inset-0 -z-10 pointer-events-none
-        dark:bg-gradient-to-t dark:from-[#0B0F1E] dark:via-[#0B0F1E]/75 dark:to-[#0B0F1E]/50
-        bg-gradient-to-t from-white/80 via-white/40 to-white/10" />
-      {/* Left vignette */}
-      <div className="absolute inset-0 -z-10 pointer-events-none
-        dark:bg-gradient-to-r dark:from-[#0B0F1E]/85 dark:via-[#0B0F1E]/20 dark:to-transparent
-        bg-gradient-to-r from-white/70 via-white/20 to-transparent" />
 
       {/* Content */}
       <div className="container mx-auto px-6 pb-24 pt-40 relative z-10 w-full">

@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
         {/* Prevent flash of wrong theme — runs before paint */}
-        <script dangerouslySetInnerHTML={{ __html: `
+        <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: `
           (function(){try{var t=localStorage.getItem('theme')||'dark';if(t==='dark')document.documentElement.classList.add('dark');}catch(e){document.documentElement.classList.add('dark');}})();
         `}} />
       </head>

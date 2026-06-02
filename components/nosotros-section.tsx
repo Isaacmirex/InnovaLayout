@@ -325,7 +325,7 @@ export default function NosotrosSection() {
 
           <div className="rounded-2xl border border-border overflow-hidden bg-card p-4 md:p-8">
             <img
-              src="/direcion.jpeg"
+              src="/organigrma.jpeg"
               alt="Organigrama InnovaLayout S.A.S. — Estructura directiva"
               className="w-full h-auto object-contain rounded-xl"
               style={{ maxHeight: "680px" }}

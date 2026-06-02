@@ -42,14 +42,14 @@ export default function HeroSection() {
         <HeroScene />
       </div>
 
-      {/* Overlay — dark mode: deep navy, light mode: warm white */}
+      {/* Overlay — dark mode: deep navy, light mode: light tint so image shows */}
       <div className="absolute inset-0 -z-10 pointer-events-none
         dark:bg-gradient-to-t dark:from-[#0B0F1E] dark:via-[#0B0F1E]/75 dark:to-[#0B0F1E]/50
-        bg-gradient-to-t from-white/95 via-white/75 to-white/30" />
+        bg-gradient-to-t from-white/80 via-white/40 to-white/10" />
       {/* Left vignette */}
       <div className="absolute inset-0 -z-10 pointer-events-none
         dark:bg-gradient-to-r dark:from-[#0B0F1E]/85 dark:via-[#0B0F1E]/20 dark:to-transparent
-        bg-gradient-to-r from-white/80 via-white/30 to-transparent" />
+        bg-gradient-to-r from-white/70 via-white/20 to-transparent" />
 
       {/* Content */}
       <div className="container mx-auto px-6 pb-24 pt-40 relative z-10 w-full">

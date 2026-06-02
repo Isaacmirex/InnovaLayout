@@ -79,7 +79,7 @@ export default function Header() {
             >
               <ThemeToggle />
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
-                <Button className="bg-[#C13344] hover:bg-[#C13344]/90 text-[#0B0F1E] font-bold gap-2 shadow-md shadow-[#C13344]/20">
+                <Button className="bg-[#00AAFF] hover:bg-[#00AAFF]/90 text-[#0B0F1E] font-bold gap-2 shadow-md shadow-[#00AAFF]/20">
                   <Phone className="w-4 h-4" />
                   Consulta Gratis
                 </Button>
@@ -121,7 +121,7 @@ export default function Header() {
                 </a>
               ))}
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="block mt-4">
-                <Button className="w-full bg-[#C13344] hover:bg-[#C13344]/90 text-[#0B0F1E] font-bold gap-2">
+                <Button className="w-full bg-[#00AAFF] hover:bg-[#00AAFF]/90 text-[#0B0F1E] font-bold gap-2">
                   <Phone className="w-4 h-4" />
                   Consulta Gratis
                 </Button>

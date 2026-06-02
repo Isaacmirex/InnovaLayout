@@ -27,24 +27,13 @@ export default function HeroSection() {
       ref={containerRef}
       className="relative min-h-screen flex items-end overflow-hidden dark:bg-[#0B0F1E] bg-slate-100"
     >
-      {/* Full-bleed company photo */}
+      {/* Full-bleed background */}
       <div className="absolute inset-0 -z-30">
-        <img
-          src="/empresa.jpg"
-          alt=""
-          className="w-full h-full object-cover object-center"
-          aria-hidden="true"
-        />
-      </div>
-
-      {/* Industrial process image — subtle bottom-right accent */}
-      <div className="absolute bottom-0 right-0 w-1/2 h-2/3 -z-20 pointer-events-none hidden lg:block">
         <img
           src="/imagen2.webp"
           alt=""
-          className="w-full h-full object-cover object-left-top opacity-20 dark:opacity-15"
+          className="w-full h-full object-cover object-center"
           aria-hidden="true"
-          style={{ maskImage: "linear-gradient(to left, rgba(0,0,0,0.6) 0%, transparent 100%)", WebkitMaskImage: "linear-gradient(to left, rgba(0,0,0,0.6) 0%, transparent 100%)" }}
         />
       </div>
 
@@ -73,9 +62,9 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="flex items-center gap-3 mb-8"
           >
-            <span className="w-2 h-2 bg-[#C13344] rounded-full animate-pulse" />
+            <span className="w-2 h-2 bg-[#00AAFF] rounded-full animate-pulse" />
             <span className="text-sm font-semibold text-primary tracking-[0.25em] uppercase">
-              Consultoría Industrial · Ecuador
+              Consultora
             </span>
           </motion.div>
 
@@ -111,7 +100,7 @@ export default function HeroSection() {
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#C13344] text-white font-bold tracking-wide text-sm hover:bg-[#C13344]/90 transition-all duration-300 group shadow-lg shadow-[#C13344]/30"
+                className="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-[#00AAFF] text-white font-bold tracking-wide text-sm hover:bg-[#00AAFF]/90 transition-all duration-300 group shadow-lg shadow-[#00AAFF]/30"
               >
                 Solicitar Consulta Gratuita
                 <span className="w-7 h-7 rounded-full bg-black/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
@@ -120,7 +109,7 @@ export default function HeroSection() {
               </a>
               <a
                 href="#simulador"
-                className="inline-flex items-center gap-2 text-sm dark:text-[#8090B0] text-slate-500 hover:text-[#C13344] transition-colors"
+                className="inline-flex items-center gap-2 text-sm dark:text-[#8090B0] text-slate-500 hover:text-[#00AAFF] transition-colors"
                 onClick={(e) => { e.preventDefault(); document.getElementById("simulador")?.scrollIntoView({ behavior: "smooth" }) }}
               >
                 <span className="w-8 h-px bg-current opacity-50" />
@@ -152,7 +141,7 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4 }}
         onClick={() => document.getElementById("servicios")?.scrollIntoView({ behavior: "smooth" })}
-        className="absolute bottom-8 right-8 flex flex-col items-center gap-1 dark:text-[#8090B0]/40 text-slate-400 hover:text-[#C13344] transition-colors z-10"
+        className="absolute bottom-8 right-8 flex flex-col items-center gap-1 dark:text-[#8090B0]/40 text-slate-400 hover:text-[#00AAFF] transition-colors z-10"
       >
         <span className="text-[9px] uppercase tracking-[0.3em]">Scroll</span>
         <motion.div animate={{ y: [0, 5, 0] }} transition={{ duration: 1.8, repeat: Infinity }}>
@@ -165,7 +154,7 @@ export default function HeroSection() {
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration: 1.5, delay: 1.0, ease: "easeOut" }}
-        className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C13344]/50 to-transparent origin-left"
+        className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00AAFF]/50 to-transparent origin-left"
       />
     </section>
   )

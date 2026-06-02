@@ -39,7 +39,7 @@ export default function Footer() {
   return (
     <footer id="contacto" ref={ref} className="relative overflow-hidden bg-[#0B0F1E] border-t border-[#1B2540]">
       {/* Subtle crimson radial */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_0%_50%,_#8B1A2A_0%,_transparent_50%)] opacity-6" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_0%_50%,_#0077CC_0%,_transparent_50%)] opacity-6" />
 
       <div className="relative z-10">
         {/* Main footer content */}
@@ -85,12 +85,12 @@ export default function Footer() {
                 </p>
                 {/* ODS badges */}
                 <div className="flex items-center gap-2 mb-8">
-                  <div className="px-3 py-1.5 rounded-lg bg-[#8B1A2A]/15 border border-[#8B1A2A]/30">
+                  <div className="px-3 py-1.5 rounded-lg bg-[#0077CC]/15 border border-[#0077CC]/30">
                     <span className="text-xs font-bold text-[#8090B0]">ODS 9</span>
                     <span className="text-xs text-muted-foreground ml-1.5">Industria</span>
                   </div>
-                  <div className="px-3 py-1.5 rounded-lg bg-[#C13344]/10 border border-[#C13344]/30">
-                    <span className="text-xs font-bold text-[#C13344]">ODS 11</span>
+                  <div className="px-3 py-1.5 rounded-lg bg-[#00AAFF]/10 border border-[#00AAFF]/30">
+                    <span className="text-xs font-bold text-[#00AAFF]">ODS 11</span>
                     <span className="text-xs text-muted-foreground ml-1.5">Ciudades</span>
                   </div>
                 </div>
@@ -105,10 +105,10 @@ export default function Footer() {
                   href={WA_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#C13344]/50 text-[#C13344] font-bold tracking-widest text-xs hover:bg-[#C13344]/10 transition-all duration-300 group"
+                  className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[#00AAFF]/50 text-[#00AAFF] font-bold tracking-widest text-xs hover:bg-[#00AAFF]/10 transition-all duration-300 group"
                 >
                   AGENDAR CONSULTA
-                  <span className="w-7 h-7 rounded-full bg-[#C13344] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span className="w-7 h-7 rounded-full bg-[#00AAFF] flex items-center justify-center group-hover:scale-110 transition-transform">
                     <ArrowRight className="w-3.5 h-3.5 text-[#0B0F1E]" />
                   </span>
                 </a>
@@ -127,7 +127,7 @@ export default function Footer() {
               <div className="space-y-4 mb-8">
                 <a
                   href="mailto:innovalayout.ec@gmail.com"
-                  className="block text-lg font-semibold text-white hover:text-[#C13344] transition-colors underline-offset-4 hover:underline"
+                  className="block text-lg font-semibold text-white hover:text-[#00AAFF] transition-colors underline-offset-4 hover:underline"
                 >
                   innovalayout.ec@gmail.com
                 </a>
@@ -185,8 +185,8 @@ export default function Footer() {
               © 2026 InnovaLayout S.A.S. — Todos los derechos reservados.
             </p>
             <div className="flex items-center gap-3">
-              <div className="w-6 h-6 bg-[#8B1A2A]/20 rounded-md flex items-center justify-center border border-[#8B1A2A]/30">
-                <Factory className="w-3.5 h-3.5 text-[#C13344]" />
+              <div className="w-6 h-6 bg-[#0077CC]/20 rounded-md flex items-center justify-center border border-[#0077CC]/30">
+                <Factory className="w-3.5 h-3.5 text-[#00AAFF]" />
               </div>
               <span className="text-xs text-[#8090B0]/40">Diseñado para MiPymes industriales de Ecuador</span>
             </div>

@@ -8,8 +8,8 @@ import type { Mesh, Group } from "three"
 const C = {
   bg:      "#0B0F1E",
   navy:    "#111827",
-  crimson: "#8B1A2A",
-  crimson2:"#C13344",
+  crimson: "#0077CC",
+  crimson2:"#00AAFF",
   muted:   "#8090B0",
   bright:  "#C84050",
 }

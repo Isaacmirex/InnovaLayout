@@ -53,7 +53,7 @@ export default function ClientsSection() {
           initial={{ scaleX: 0 }}
           animate={isInView ? { scaleX: 1 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute top-0 left-0 h-1 w-48 bg-gradient-to-r from-[#C13344] to-[#8B1A2A] origin-left"
+          className="absolute top-0 left-0 h-1 w-48 bg-gradient-to-r from-[#00AAFF] to-[#0077CC] origin-left"
         />
 
         <div ref={ref} className="container mx-auto px-6 pb-16 relative z-10 w-full">
@@ -66,7 +66,7 @@ export default function ClientsSection() {
               className="flex items-center gap-2 mb-5"
             >
               <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase">Resultados reales</span>
-              <div className="h-px w-12 bg-[#C13344]/60" />
+              <div className="h-px w-12 bg-[#00AAFF]/60" />
             </motion.div>
 
             <motion.h2
@@ -100,7 +100,7 @@ export default function ClientsSection() {
               className="flex flex-wrap gap-8 mt-8"
             >
               {results.map((r) => (
-                <div key={r.label} className="border-l-2 border-[#C13344] pl-4">
+                <div key={r.label} className="border-l-2 border-[#00AAFF] pl-4">
                   <div className="text-2xl font-black dark:text-white text-[#0B0F1E]">{r.metric}</div>
                   <div className="text-xs text-muted-foreground mt-1 max-w-[130px] leading-tight">{r.label}</div>
                 </div>
@@ -148,10 +148,10 @@ export default function ClientsSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.85 }}
-              className="inline-flex items-center gap-3 mt-2 px-7 py-3.5 rounded-full border border-[#C13344]/50 text-[#C13344] text-sm font-bold tracking-widest hover:bg-[#C13344]/10 transition-all group"
+              className="inline-flex items-center gap-3 mt-2 px-7 py-3.5 rounded-full border border-[#00AAFF]/50 text-[#00AAFF] text-sm font-bold tracking-widest hover:bg-[#00AAFF]/10 transition-all group"
             >
               SOLICITAR DIAGNÓSTICO
-              <span className="w-7 h-7 rounded-full bg-[#C13344] flex items-center justify-center group-hover:scale-110 transition-transform">
+              <span className="w-7 h-7 rounded-full bg-[#00AAFF] flex items-center justify-center group-hover:scale-110 transition-transform">
                 <ArrowRight className="w-3.5 h-3.5 text-[#0B0F1E]" />
               </span>
             </motion.a>

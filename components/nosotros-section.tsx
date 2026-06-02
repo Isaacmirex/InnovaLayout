@@ -37,8 +37,8 @@ const alcanceSectors = [
   {
     title: "Sector Textil",
     description: "Talleres de confección, hilado y tejeduría. Reducción de tiempos de ciclo y recorridos entre estaciones de trabajo.",
-    gradient: "from-[#111827]/30 to-[#8B1A2A]/20",
-    border: "border-[#8B1A2A]/40",
+    gradient: "from-[#111827]/30 to-[#0077CC]/20",
+    border: "border-[#0077CC]/40",
   },
   {
     title: "Sector Alimentario",
@@ -89,7 +89,7 @@ export default function NosotrosSection() {
     <section id="nosotros" className="py-28 relative overflow-hidden">
       {/* Layered backgrounds */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_20%_30%,_#111827_0%,_transparent_55%)] opacity-15" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_70%,_#C13344_0%,_transparent_50%)] opacity-5" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_80%_70%,_#00AAFF_0%,_transparent_50%)] opacity-5" />
 
       <div className="container mx-auto px-4 relative z-10" ref={sectionRef}>
 
@@ -119,13 +119,11 @@ export default function NosotrosSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24"
+          className="grid grid-cols-2 max-w-lg mx-auto gap-6 mb-24"
         >
           {[
             { value: 40, suffix: "+", label: "Empresas Asesoradas" },
-            { value: 8, suffix: " años", label: "Experiencia en sector" },
             { value: 95, suffix: "%", label: "Clientes satisfechos" },
-            { value: 3, suffix: " países", label: "Alcance regional" },
           ].map((stat, i) => (
             <div key={i} className="text-center bg-card rounded-2xl border border-border p-6 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -168,7 +166,7 @@ export default function NosotrosSection() {
                   transition={{ delay: 0.35 + i * 0.08 }}
                   className="flex items-start gap-3 text-sm text-muted-foreground"
                 >
-                  <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#C13344] flex-shrink-0" />
+                  <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[#00AAFF] flex-shrink-0" />
                   {item}
                 </motion.li>
               ))}
@@ -190,7 +188,7 @@ export default function NosotrosSection() {
               />
               {/* Dark overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F1E]/90 via-[#0B0F1E]/20 to-transparent" />
-              <div className="absolute inset-0 bg-[#8B1A2A]/10" />
+              <div className="absolute inset-0 bg-[#0077CC]/10" />
               {/* Floating badges */}
               <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-border text-xs text-foreground font-medium">
                 🎯 Resultados medibles
@@ -245,7 +243,7 @@ export default function NosotrosSection() {
             className="order-1 lg:order-2"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-[#C13344]/15 border border-[#C13344]/30 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-[#00AAFF]/15 border border-[#00AAFF]/30 flex items-center justify-center">
                 <Eye className="w-6 h-6 text-primary" />
               </div>
               <div>
@@ -259,7 +257,7 @@ export default function NosotrosSection() {
               la solidez técnica de sus metodologías, el impacto real en la productividad
               de sus clientes y su compromiso con una industria más eficiente y sostenible.
             </p>
-            <div className="bg-card rounded-xl border border-[#C13344]/20 p-4">
+            <div className="bg-card rounded-xl border border-[#00AAFF]/20 p-4">
               <p className="text-sm text-muted-foreground italic">
                 "Creemos que cada planta industrial bien organizada es un paso hacia
                 una economía más competitiva y equitativa para Ecuador."
@@ -314,7 +312,7 @@ export default function NosotrosSection() {
           className="mb-20"
         >
           <div className="flex items-center gap-3 mb-10 justify-center">
-            <div className="w-12 h-12 rounded-xl bg-[#C13344]/15 border border-[#C13344]/30 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl bg-[#00AAFF]/15 border border-[#00AAFF]/30 flex items-center justify-center">
               <span className="text-primary font-bold text-sm">04</span>
             </div>
             <div>

@@ -28,12 +28,12 @@ const services = [
       "Evaluación de capacidad instalada",
       "Indicadores de gestión y productividad (KPIs)",
     ],
-    accent: "#8B1A2A",
+    accent: "#0077CC",
     accentLight: "#8090B0",
     gradientFrom: "from-[#111827]/25",
-    gradientTo: "to-[#8B1A2A]/10",
-    borderColor: "border-[#8B1A2A]/35",
-    bgIcon: "bg-[#8B1A2A]/15",
+    gradientTo: "to-[#0077CC]/10",
+    borderColor: "border-[#0077CC]/35",
+    bgIcon: "bg-[#0077CC]/15",
     animation: TrendingUp,
   },
   {
@@ -49,12 +49,12 @@ const services = [
       "Reducción de recorridos innecesarios",
       "Simulación y validación del nuevo layout",
     ],
-    accent: "#C13344",
-    accentLight: "#C13344",
-    gradientFrom: "from-[#C13344]/15",
+    accent: "#00AAFF",
+    accentLight: "#00AAFF",
+    gradientFrom: "from-[#00AAFF]/15",
     gradientTo: "to-[#111827]/15",
-    borderColor: "border-[#C13344]/30",
-    bgIcon: "bg-[#C13344]/15",
+    borderColor: "border-[#00AAFF]/30",
+    bgIcon: "bg-[#00AAFF]/15",
     animation: Boxes,
   },
   {
@@ -73,7 +73,7 @@ const services = [
     accent: "#8090B0",
     accentLight: "#8090B0",
     gradientFrom: "from-[#8090B0]/15",
-    gradientTo: "to-[#8B1A2A]/10",
+    gradientTo: "to-[#0077CC]/10",
     borderColor: "border-[#8090B0]/30",
     bgIcon: "bg-[#8090B0]/15",
     animation: Timer,
@@ -187,7 +187,7 @@ export default function ServicesSection() {
     <section id="servicios" className="py-28 relative overflow-hidden">
       {/* Subtle bg texture */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,_#111827_0%,_transparent_30%)] opacity-10" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_80%,_#8B1A2A_0%,_transparent_25%)] opacity-8" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_80%,_#0077CC_0%,_transparent_25%)] opacity-8" />
 
       <div className="container mx-auto px-4">
         {/* Section header */}
@@ -244,7 +244,7 @@ export default function ServicesSection() {
           <Button
             size="sm"
             variant="outline"
-            className="border-[#C13344]/40 text-[#C13344] hover:bg-[#C13344]/10 gap-2"
+            className="border-[#00AAFF]/40 text-[#00AAFF] hover:bg-[#00AAFF]/10 gap-2"
           >
             Solicitar Diagnóstico <ArrowRight className="w-4 h-4" />
           </Button>

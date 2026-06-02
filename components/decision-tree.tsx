@@ -43,8 +43,8 @@ const outcomes = {
     description:
       "Nuestros ingenieros analizarán tu planta, formularán objetivos claros y diseñarán una estrategia personalizada. Sin teorías, solo resultados medibles.",
     cta: "CONSULTA",
-    ctaColor: "border-[#8B1A2A] text-[#8B1A2A] hover:bg-[#8B1A2A]/10",
-    accent: "#8B1A2A",
+    ctaColor: "border-[#0077CC] text-[#0077CC] hover:bg-[#0077CC]/10",
+    accent: "#0077CC",
   },
   someNo: {
     Icon: TrendingUp,
@@ -53,8 +53,8 @@ const outcomes = {
       "Realizamos un diagnóstico inicial gratuito de tu operación. Identificamos los problemas críticos y trazamos un plan de acción antes de cualquier intervención.",
     cta: "CONSULTA",
     cta2: "DIAGNÓSTICO",
-    ctaColor: "border-[#C13344] text-[#C13344] hover:bg-[#C13344]/10",
-    accent: "#C13344",
+    ctaColor: "border-[#00AAFF] text-[#00AAFF] hover:bg-[#00AAFF]/10",
+    accent: "#00AAFF",
   },
 }
 
@@ -85,7 +85,7 @@ export default function DecisionTree() {
   return (
     <section className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/10 to-background" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_40%_at_80%_50%,_#C13344_0%,_transparent_60%)] opacity-4" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_40%_at_80%_50%,_#00AAFF_0%,_transparent_60%)] opacity-4" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
@@ -96,8 +96,8 @@ export default function DecisionTree() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-6">
-            <div className="w-5 h-5 rounded-full bg-[#8B1A2A]/20 flex items-center justify-center">
-              <TrendingUp className="w-3 h-3 text-[#8B1A2A]" />
+            <div className="w-5 h-5 rounded-full bg-[#0077CC]/20 flex items-center justify-center">
+              <TrendingUp className="w-3 h-3 text-[#0077CC]" />
             </div>
             <span className="text-sm font-medium text-muted-foreground">¿Cómo aprovechar tu consultoría?</span>
           </div>
@@ -134,11 +134,11 @@ export default function DecisionTree() {
                     <div
                       className={`w-10 h-10 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-all duration-400 ${
                         answeredYes
-                          ? "bg-[#8B1A2A] border-[#8B1A2A]"
+                          ? "bg-[#0077CC] border-[#0077CC]"
                           : answeredNo
                           ? "bg-red-500/20 border-red-500/60"
                           : isActive
-                          ? "bg-card border-[#8B1A2A]"
+                          ? "bg-card border-[#0077CC]"
                           : "bg-card border-border"
                       }`}
                     >
@@ -147,14 +147,14 @@ export default function DecisionTree() {
                       ) : answeredNo ? (
                         <q.Icon className="w-5 h-5 text-red-400" />
                       ) : (
-                        <q.Icon className={`w-5 h-5 ${isActive ? "text-[#8B1A2A]" : "text-muted-foreground/40"}`} />
+                        <q.Icon className={`w-5 h-5 ${isActive ? "text-[#0077CC]" : "text-muted-foreground/40"}`} />
                       )}
                     </div>
                     {/* Line */}
                     {i < questions.length - 1 && (
                       <div
                         className={`flex-1 w-0.5 my-1 ${
-                          answeredYes ? "bg-[#8B1A2A]/50" : "border-l border-dashed border-muted-foreground/20"
+                          answeredYes ? "bg-[#0077CC]/50" : "border-l border-dashed border-muted-foreground/20"
                         }`}
                         style={{ minHeight: 20 }}
                       />
@@ -167,7 +167,7 @@ export default function DecisionTree() {
                     <div
                       className={`flex-1 rounded-xl border p-4 transition-all duration-300 ${
                         isActive
-                          ? "border-[#8B1A2A]/50 bg-card shadow-lg shadow-[#8B1A2A]/5"
+                          ? "border-[#0077CC]/50 bg-card shadow-lg shadow-[#0077CC]/5"
                           : isAnswered
                           ? "border-border/50 bg-card/60"
                           : "border-border/30 bg-card/30"
@@ -182,7 +182,7 @@ export default function DecisionTree() {
                           <p className="text-xs text-muted-foreground/60 mt-1">{q.sub}</p>
                         </div>
                         {answeredYes && (
-                          <span className="text-xs font-bold text-[#8B1A2A] bg-[#8B1A2A]/10 px-2 py-0.5 rounded-full flex-shrink-0">
+                          <span className="text-xs font-bold text-[#0077CC] bg-[#0077CC]/10 px-2 py-0.5 rounded-full flex-shrink-0">
                             Sí
                           </span>
                         )}
@@ -204,7 +204,7 @@ export default function DecisionTree() {
                           >
                             <button
                               onClick={() => answer(q.id, true)}
-                              className="flex-1 py-2 rounded-lg bg-[#8B1A2A]/20 border border-[#8B1A2A]/40 text-[#8B1A2A] text-xs font-bold hover:bg-[#8B1A2A]/30 transition-colors flex items-center justify-center gap-1"
+                              className="flex-1 py-2 rounded-lg bg-[#0077CC]/20 border border-[#0077CC]/40 text-[#0077CC] text-xs font-bold hover:bg-[#0077CC]/30 transition-colors flex items-center justify-center gap-1"
                             >
                               <CheckCircle2 className="w-3.5 h-3.5" />
                               Sí
@@ -247,7 +247,7 @@ export default function DecisionTree() {
           {answeredCount > 0 && (
             <div className="flex ml-3 mb-1">
               {allYes && answeredCount > 0 && (
-                <p className="text-xs text-[#8B1A2A] font-bold">
+                <p className="text-xs text-[#0077CC] font-bold">
                   {answeredCount === 3 ? "✓ Sí, Sí, Sí" : `${answeredCount}/3 confirmado`}
                 </p>
               )}

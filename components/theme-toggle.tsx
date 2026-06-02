@@ -27,7 +27,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label={isDark ? "Cambiar a tema claro" : "Cambiar a tema oscuro"}
-      className="w-9 h-9 rounded-xl border border-border bg-card/60 backdrop-blur-sm flex items-center justify-center hover:bg-card hover:border-[#C13344]/40 transition-all duration-200"
+      className="w-9 h-9 rounded-xl border border-border bg-card/60 backdrop-blur-sm flex items-center justify-center hover:bg-card hover:border-[#00AAFF]/40 transition-all duration-200"
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDark ? (
@@ -38,7 +38,7 @@ export default function ThemeToggle() {
             exit={{ opacity: 0, rotate: 30, scale: 0.7 }}
             transition={{ duration: 0.2 }}
           >
-            <Sun className="w-4 h-4 text-[#C13344]" />
+            <Sun className="w-4 h-4 text-[#00AAFF]" />
           </motion.span>
         ) : (
           <motion.span

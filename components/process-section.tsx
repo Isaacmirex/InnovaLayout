@@ -57,7 +57,7 @@ const CustomTooltip = ({ active, payload, label }: {
 }) => {
   if (!active || !payload?.length) return null
   return (
-    <div className="dark:bg-[#0B0F1E] bg-white dark:border-[#8B1A2A]/40 border-slate-200 border rounded-xl px-4 py-3 shadow-xl">
+    <div className="dark:bg-[#0B0F1E] bg-white dark:border-[#0077CC]/40 border-slate-200 border rounded-xl px-4 py-3 shadow-xl">
       <p className="text-xs dark:text-[#8090B0] text-slate-400 mb-2 uppercase tracking-wide">{label}</p>
       {payload.map((p) => (
         <p key={p.name} className="text-sm font-semibold" style={{ color: p.color }}>
@@ -72,7 +72,7 @@ const steps = [
   {
     number: "1",
     title: "Agenda tu consulta y horario",
-    accent: "#C13344",
+    accent: "#00AAFF",
     icons: [
       { Icon: Phone,    label: "Llamada" },
       { Icon: Calendar, label: "Agenda" },
@@ -85,10 +85,10 @@ const steps = [
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#C13344]/60 text-primary text-xs font-bold tracking-widest hover:bg-[#C13344]/10 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#00AAFF]/60 text-primary text-xs font-bold tracking-widest hover:bg-[#00AAFF]/10 transition-colors"
         >
           CONSULTAR
-          <span className="w-5 h-5 rounded-full bg-[#C13344] flex items-center justify-center">
+          <span className="w-5 h-5 rounded-full bg-[#00AAFF] flex items-center justify-center">
             <ArrowRight className="w-3 h-3 text-[#0B0F1E]" />
           </span>
         </a>
@@ -98,14 +98,14 @@ const steps = [
   {
     number: "2",
     title: "Conoce a tu analista",
-    accent: "#8B1A2A",
+    accent: "#0077CC",
     icons: [],
     cta: null,
     detail: (
       <div className="mt-3 space-y-2">
         <div className="flex items-center gap-3">
           {/* Analyst avatar */}
-          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#8B1A2A]/50 flex-shrink-0">
+          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#0077CC]/50 flex-shrink-0">
             <img
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop&crop=face&q=80"
               alt="Analista InnovaLayout"
@@ -114,7 +114,7 @@ const steps = [
                 (e.target as HTMLImageElement).style.display = "none"
               }}
             />
-            <div className="w-full h-full bg-[#8B1A2A]/20 flex items-center justify-center text-[#8B1A2A] font-bold text-sm hidden">F</div>
+            <div className="w-full h-full bg-[#0077CC]/20 flex items-center justify-center text-[#0077CC] font-bold text-sm hidden">F</div>
           </div>
           <div className="flex-1 h-8 bg-muted/40 rounded-full border border-border flex items-center px-3">
             <span className="text-xs text-muted-foreground/50">Escribe tu consulta…</span>
@@ -185,7 +185,7 @@ export default function ProcessSection() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-6">
-            <div className="w-5 h-5 rounded-full bg-[#C13344]/20 flex items-center justify-center">
+            <div className="w-5 h-5 rounded-full bg-[#00AAFF]/20 flex items-center justify-center">
               <ArrowRight className="w-3 h-3 text-primary" />
             </div>
             <span className="text-sm font-medium text-muted-foreground">Proceso de Consultoría</span>
@@ -207,7 +207,7 @@ export default function ProcessSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.15 + i * 0.18, duration: 0.6 }}
-                className="flex-1 bg-card rounded-2xl border border-border p-5 relative overflow-hidden group hover:border-[#8B1A2A]/40 transition-colors duration-300"
+                className="flex-1 bg-card rounded-2xl border border-border p-5 relative overflow-hidden group hover:border-[#0077CC]/40 transition-colors duration-300"
               >
                 {/* Top accent glow */}
                 <div
@@ -265,7 +265,7 @@ export default function ProcessSection() {
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1.5">
-                <span className="w-3 h-3 rounded-full bg-[#8B1A2A]" />
+                <span className="w-3 h-3 rounded-full bg-[#0077CC]" />
                 <span className="text-xs text-muted-foreground">Con InnovaLayout</span>
               </div>
               <div className="flex items-center gap-1.5">
@@ -280,15 +280,15 @@ export default function ProcessSection() {
               <AreaChart data={chartData} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
                 <defs>
                   <linearGradient id="gradCon" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#8B1A2A" stopOpacity={0.5} />
-                    <stop offset="95%" stopColor="#8B1A2A" stopOpacity={0.05} />
+                    <stop offset="5%" stopColor="#0077CC" stopOpacity={0.5} />
+                    <stop offset="95%" stopColor="#0077CC" stopOpacity={0.05} />
                   </linearGradient>
                   <linearGradient id="gradSin" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#2D4A6B" stopOpacity={0.6} />
                     <stop offset="95%" stopColor="#2D4A6B" stopOpacity={0.05} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="#8B1A2A18" vertical={false} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#0077CC18" vertical={false} />
                 <XAxis
                   dataKey="t"
                   tick={{ fill: "#8090B080", fontSize: 11 }}
@@ -316,11 +316,11 @@ export default function ProcessSection() {
                   type="monotone"
                   dataKey="con"
                   name="Con InnovaLayout"
-                  stroke="#8B1A2A"
+                  stroke="#0077CC"
                   strokeWidth={2.5}
                   fill="url(#gradCon)"
-                  dot={<CustomDot fill="#C13344" />}
-                  activeDot={{ r: 6, fill: "#8B1A2A", stroke: "#8090B0", strokeWidth: 2 }}
+                  dot={<CustomDot fill="#00AAFF" />}
+                  activeDot={{ r: 6, fill: "#0077CC", stroke: "#8090B0", strokeWidth: 2 }}
                 />
               </AreaChart>
             </ResponsiveContainer>
@@ -331,7 +331,7 @@ export default function ProcessSection() {
                 <div key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground/70">
                   <span
                     className="w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold flex-shrink-0"
-                    style={{ backgroundColor: "#C13344", color: "#0B0F1E" }}
+                    style={{ backgroundColor: "#00AAFF", color: "#0B0F1E" }}
                   >
                     {i + 1}
                   </span>
@@ -353,10 +353,10 @@ export default function ProcessSection() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-[#C13344]/50 text-primary font-bold tracking-widest text-sm hover:bg-[#C13344]/10 transition-all duration-300 group"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-[#00AAFF]/50 text-primary font-bold tracking-widest text-sm hover:bg-[#00AAFF]/10 transition-all duration-300 group"
           >
             AGENDAR CONSULTA GRATUITA
-            <span className="w-8 h-8 rounded-full bg-[#C13344] flex items-center justify-center group-hover:scale-110 transition-transform">
+            <span className="w-8 h-8 rounded-full bg-[#00AAFF] flex items-center justify-center group-hover:scale-110 transition-transform">
               <ArrowRight className="w-4 h-4 text-[#0B0F1E]" />
             </span>
           </a>

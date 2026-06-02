@@ -38,11 +38,14 @@ export default function HeroSection() {
       <div className="absolute inset-0 pointer-events-none hidden dark:block
         bg-gradient-to-r from-[#0B0F1E]/90 via-[#0B0F1E]/25 to-transparent" />
 
-      {/* Light mode overlay — very light tint so the image is clearly visible */}
+      {/* Light mode — bottom gradient for text readability */}
       <div className="absolute inset-0 pointer-events-none dark:hidden
-        bg-gradient-to-t from-white/60 via-white/20 to-transparent" />
+        bg-gradient-to-t from-white/65 via-white/20 to-transparent" />
       <div className="absolute inset-0 pointer-events-none dark:hidden
         bg-gradient-to-r from-white/50 via-transparent to-transparent" />
+      {/* Light mode — top gradient so nav links are readable */}
+      <div className="absolute top-0 left-0 right-0 h-32 pointer-events-none dark:hidden
+        bg-gradient-to-b from-white/70 to-transparent" />
 
       {/* 3D particles — dark mode only */}
       <div className="hidden dark:block absolute inset-0 pointer-events-none">

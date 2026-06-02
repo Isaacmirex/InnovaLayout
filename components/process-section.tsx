@@ -85,7 +85,7 @@ const steps = [
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#C13344]/60 text-[#C13344] text-xs font-bold tracking-widest hover:bg-[#C13344]/10 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#C13344]/60 text-primary text-xs font-bold tracking-widest hover:bg-[#C13344]/10 transition-colors"
         >
           CONSULTAR
           <span className="w-5 h-5 rounded-full bg-[#C13344] flex items-center justify-center">
@@ -186,7 +186,7 @@ export default function ProcessSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-6">
             <div className="w-5 h-5 rounded-full bg-[#C13344]/20 flex items-center justify-center">
-              <ArrowRight className="w-3 h-3 text-[#C13344]" />
+              <ArrowRight className="w-3 h-3 text-primary" />
             </div>
             <span className="text-sm font-medium text-muted-foreground">Proceso de Consultoría</span>
           </div>
@@ -353,7 +353,7 @@ export default function ProcessSection() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-[#C13344]/50 text-[#C13344] font-bold tracking-widest text-sm hover:bg-[#C13344]/10 transition-all duration-300 group"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full border border-[#C13344]/50 text-primary font-bold tracking-widest text-sm hover:bg-[#C13344]/10 transition-all duration-300 group"
           >
             AGENDAR CONSULTA GRATUITA
             <span className="w-8 h-8 rounded-full bg-[#C13344] flex items-center justify-center group-hover:scale-110 transition-transform">

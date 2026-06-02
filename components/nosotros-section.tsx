@@ -229,7 +229,7 @@ export default function NosotrosSection() {
                       transition={{ delay: 0.5 + i * 0.1 }}
                       className="flex items-center gap-3 bg-card/60 backdrop-blur-sm rounded-lg px-4 py-2.5 border border-border"
                     >
-                      <pillar.icon className="w-4 h-4 text-[#C13344]" />
+                      <pillar.icon className="w-4 h-4 text-primary" />
                       <span className="text-sm text-foreground">{pillar.label}</span>
                     </motion.div>
                   ))}
@@ -246,7 +246,7 @@ export default function NosotrosSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-[#C13344]/15 border border-[#C13344]/30 flex items-center justify-center">
-                <Eye className="w-6 h-6 text-[#C13344]" />
+                <Eye className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-widest">02</p>
@@ -264,7 +264,7 @@ export default function NosotrosSection() {
                 "Creemos que cada planta industrial bien organizada es un paso hacia
                 una economía más competitiva y equitativa para Ecuador."
               </p>
-              <p className="text-xs text-[#C13344] mt-2 font-medium">— Franciss Delgado, Fundadora InnovaLayout</p>
+              <p className="text-xs text-primary mt-2 font-medium">— Franciss Delgado, Fundadora InnovaLayout</p>
             </div>
           </motion.div>
         </div>
@@ -315,7 +315,7 @@ export default function NosotrosSection() {
         >
           <div className="flex items-center gap-3 mb-10 justify-center">
             <div className="w-12 h-12 rounded-xl bg-[#C13344]/15 border border-[#C13344]/30 flex items-center justify-center">
-              <span className="text-[#C13344] font-bold text-sm">04</span>
+              <span className="text-primary font-bold text-sm">04</span>
             </div>
             <div>
               <p className="text-xs text-muted-foreground uppercase tracking-widest">04</p>

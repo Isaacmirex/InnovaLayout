@@ -65,7 +65,7 @@ export default function ClientsSection() {
               transition={{ duration: 0.6 }}
               className="flex items-center gap-2 mb-5"
             >
-              <span className="text-[#C13344] text-xs font-bold tracking-[0.3em] uppercase">Resultados reales</span>
+              <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase">Resultados reales</span>
               <div className="h-px w-12 bg-[#C13344]/60" />
             </motion.div>
 
@@ -76,7 +76,7 @@ export default function ClientsSection() {
               className="text-4xl md:text-6xl font-black leading-[1] tracking-tight mb-4 dark:text-white text-[#0B0F1E]"
             >
               Operaciones que<br />
-              <span className="text-[#C13344]">
+              <span className="text-primary">
                 transformamos
               </span>
             </motion.h2>

@@ -5,7 +5,7 @@ import { useRef, useState } from "react"
 import {
   BarChart3,
   Layout,
-  Settings2,
+  Wrench,
   ArrowRight,
   TrendingUp,
   Timer,
@@ -59,16 +59,16 @@ const services = [
   },
   {
     id: 3,
-    icon: Settings2,
-    title: "Ingeniería de Métodos y Mejora Continua",
-    shortTitle: "Métodos",
+    icon: Wrench,
+    title: "Mantenimiento Industrial",
+    shortTitle: "Mantenimiento",
     description:
-      "Análisis, rediseño y estandarización de procesos internos para eliminar actividades que no generan valor y mejorar la cadena productiva.",
+      "Previene paros costosos, gestiona activos y elimina fallas repetitivas con planes de mantenimiento técnico especializado para tu maquinaria.",
     features: [
-      "Estudios de tiempos y movimientos",
-      "Aplicación de Lean Manufacturing",
-      "Estandarización de procesos y fichas técnicas",
-      "Eliminación de desperdicios (MUDA)",
+      "Planes de mantenimiento: Previene paros costosos y repara fallas al instante.",
+      "Indicadores de mantenimiento: Optimiza tu presupuesto midiendo el rendimiento con KPIs.",
+      "Gestión de activos: Maximiza la vida útil de toda tu maquinaria.",
+      "Diagnóstico de fallas: Elimina averías repetitivas identificando la causa raíz.",
     ],
     accent: "#8090B0",
     accentLight: "#8090B0",
@@ -198,7 +198,7 @@ export default function ServicesSection() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-6"
           >
-            <Settings2 className="w-4 h-4 text-primary" />
+            <Wrench className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">Líneas de Servicio</span>
           </motion.div>
 

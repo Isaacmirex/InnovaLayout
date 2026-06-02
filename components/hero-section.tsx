@@ -37,6 +37,17 @@ export default function HeroSection() {
         />
       </div>
 
+      {/* Industrial process image — subtle bottom-right accent */}
+      <div className="absolute bottom-0 right-0 w-1/2 h-2/3 -z-20 pointer-events-none hidden lg:block">
+        <img
+          src="/imagen2.webp"
+          alt=""
+          className="w-full h-full object-cover object-left-top opacity-20 dark:opacity-15"
+          aria-hidden="true"
+          style={{ maskImage: "linear-gradient(to left, rgba(0,0,0,0.6) 0%, transparent 100%)", WebkitMaskImage: "linear-gradient(to left, rgba(0,0,0,0.6) 0%, transparent 100%)" }}
+        />
+      </div>
+
       {/* 3D particles — dark mode only */}
       <div className="hidden dark:block">
         <HeroScene />
@@ -63,7 +74,7 @@ export default function HeroSection() {
             className="flex items-center gap-3 mb-8"
           >
             <span className="w-2 h-2 bg-[#C13344] rounded-full animate-pulse" />
-            <span className="text-sm font-semibold text-[#C13344] tracking-[0.25em] uppercase">
+            <span className="text-sm font-semibold text-primary tracking-[0.25em] uppercase">
               Consultoría Industrial · Ecuador
             </span>
           </motion.div>
@@ -77,7 +88,7 @@ export default function HeroSection() {
               dark:text-white text-[#0B0F1E]"
           >
             Diseñamos el<br />
-            <span className="text-[#C13344]">
+            <span className="text-primary">
               futuro operativo
             </span><br />
             de tu empresa
